@@ -3,7 +3,52 @@ package com.vindince.test;
 public class Card {
 	
 	private String suit,rank;
+	private Suit realSuipackage com.vindince.test;
+
+public class CardDeck {
+	
+	public Card[] Cards = new Card[52];
+
+	
+	
+	public CardDeck(){
+		
+		for (int i = 0 ; i < 52 ; i++){
+		Cards[i] = new Card();
+		}
+		
+	}
+	
+	
+	
+	public Card getCard(int i){
+		
+		
+		return Cards[i];
+		
+	}
+	
+	
+
+		
+
+}
+	private Rank realRank;
+	
+	
 	private int numSuit,numRank;
+	
+	
+
+	
+	public enum Suit {
+	DIAMONDS,CLUBS,HEARTS,SPADES
+	}
+	
+	public enum Rank {
+	ACE,DEUCE,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,TEN,JACK,QUEEN,KING
+	}
+	
 	
 	
 	//Types of Suits
@@ -63,6 +108,87 @@ public class Card {
 		 
 	 }
 	 
+	 
+	public void Ranker(){
+	
+		switch (numRank){
+	
+		case Rank.ACE:
+	    	rank = "Ace";
+	    	break;
+	
+		default:
+			rank = "Null";
+			break;
+	
+		}
+	
+	} 
+	
+	
+	public void Suiter(){
+	
+		switch(numSuit){
+		
+		case Suit.DIAMONDS:
+			suit = "Diamonds";package com.vindince.test;
+
+public class CardDeck {
+	
+	public Card[] Cards = new Card[52];
+
+	
+	
+	public CardDeck(){
+		
+		for (int i = 0 ; i < 52 ; i++){
+		Cards[i] = new Card();
+		}
+		
+	}
+	
+	
+	
+	public Card getCard(int i){
+		
+		
+		return Cards[i];
+		
+	}
+	
+	
+
+		
+
+}
+
+			break;
+		
+		case Suit.HEARTS:
+			suit = "Hearts";
+			break;
+		
+		case SUIT.CLUBS:
+			suit = "Clubs";
+			break;
+		
+		case Suit.SPADES:
+			suit = "Spades";
+			break;
+			
+		default:
+			suit = "Null";
+			break;
+		
+		
+		}
+		
+	
+	
+	}
+	
+	
+	
 	 
 	public void convertRank(){
 	
