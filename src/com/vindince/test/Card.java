@@ -3,7 +3,8 @@ package com.vindince.test;
 public class Card {
 	
 	private String suit,rank;
-	private Suit realSuipackage com.vindince.test;
+	private Suit realSuit;
+	
 
 public class CardDeck {
 	
@@ -131,7 +132,7 @@ public class CardDeck {
 		switch(numSuit){
 		
 		case Suit.DIAMONDS:
-			suit = "Diamonds";package com.vindince.test;
+			suit = "Diamonds";
 
 public class CardDeck {
 	
