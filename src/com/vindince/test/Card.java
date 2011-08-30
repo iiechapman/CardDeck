@@ -112,9 +112,9 @@ public class CardDeck {
 	 
 	public void Ranker(){
 	
-		switch (numRank){
+		switch (realRank){
 	
-		case Rank.ACE:
+		case ACE:
 	    	rank = "Ace";
 	    	break;
 	
@@ -129,51 +129,22 @@ public class CardDeck {
 	
 	public void Suiter(){
 	
-		switch(numSuit){
+		switch(realSuit){
 		
-		case Suit.DIAMONDS:
+		case DIAMONDS:
 			suit = "Diamonds";
-
-public class CardDeck {
-	
-	public Card[] Cards = new Card[52];
-
-	
-	
-	public CardDeck(){
-		
-		for (int i = 0 ; i < 52 ; i++){
-		Cards[i] = new Card();
-		}
-		
-	}
-	
-	
-	
-	public Card getCard(int i){
-		
-		
-		return Cards[i];
-		
-	}
-	
-	
-
-		
-
-}
 
 			break;
 		
-		case Suit.HEARTS:
+		case HEARTS:
 			suit = "Hearts";
 			break;
 		
-		case SUIT.CLUBS:
+		case CLUBS:
 			suit = "Clubs";
 			break;
 		
-		case Suit.SPADES:
+		case SPADES:
 			suit = "Spades";
 			break;
 			
